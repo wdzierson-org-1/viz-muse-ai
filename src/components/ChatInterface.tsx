@@ -26,12 +26,12 @@ const ChatInterface = () => {
     <Card className={`fixed bottom-6 left-20 bg-card shadow-[var(--shadow-elevated)] border-2 rounded-2xl transition-all duration-300 ${isMinimized ? 'w-80 h-16' : 'w-80'}`} style={{borderImage: 'var(--gradient-chat) 1'}}>
       <CardContent className="p-0">
         {/* Header with minimize/maximize button */}
-        <div className="flex items-center justify-between p-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-t-2xl">
+        <div className="flex items-center justify-between px-3 py-1.5 bg-muted/80 text-foreground rounded-t-2xl border-b border-border">
           <span className="text-sm font-medium">Medical Assistant</span>
           <Button 
             size="sm" 
             variant="ghost" 
-            className="h-6 w-6 p-0 text-white hover:bg-white/20"
+            className="h-6 w-6 p-0 text-foreground hover:bg-muted"
             onClick={() => setIsMinimized(!isMinimized)}
           >
             {isMinimized ? <Maximize2 className="w-4 h-4" /> : <Minimize2 className="w-4 h-4" />}

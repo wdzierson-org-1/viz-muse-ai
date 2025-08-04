@@ -9,13 +9,13 @@ const MedicalPanels = () => {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
       {/* Diagnoses Panel */}
       <Card className="bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-card)]">
-        <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-t-lg">
-          <CardTitle className="flex items-center justify-between text-sm font-medium">
+        <CardHeader className="bg-muted/80 rounded-t-lg border-b border-border py-2">
+          <CardTitle className="flex items-center justify-between text-xs font-medium">
             <div className="flex items-center gap-2">
-              <FolderOpen className="w-4 h-4" />
-              <span>Diagnoses</span>
+              <FolderOpen className="w-3 h-3 text-foreground" />
+              <span className="text-foreground">Diagnoses</span>
             </div>
-            <MoreHorizontal className="w-4 h-4" />
+            <MoreHorizontal className="w-3 h-3 text-foreground" />
           </CardTitle>
         </CardHeader>
         <CardContent className="p-4 space-y-3">
@@ -31,13 +31,13 @@ const MedicalPanels = () => {
 
       {/* CT Scan Panel */}
       <Card className="bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-card)]">
-        <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-t-lg">
-          <CardTitle className="flex items-center justify-between text-sm font-medium">
+        <CardHeader className="bg-muted/80 rounded-t-lg border-b border-border py-2">
+          <CardTitle className="flex items-center justify-between text-xs font-medium">
             <div className="flex items-center gap-2">
-              <ScanLine className="w-4 h-4" />
-              <span>CT Scan</span>
+              <ScanLine className="w-3 h-3 text-foreground" />
+              <span className="text-foreground">CT Scan</span>
             </div>
-            <MoreHorizontal className="w-4 h-4" />
+            <MoreHorizontal className="w-3 h-3 text-foreground" />
           </CardTitle>
         </CardHeader>
         <CardContent className="p-4">
@@ -51,13 +51,13 @@ const MedicalPanels = () => {
 
       {/* Prescriptions Panel */}
       <Card className="bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-card)]">
-        <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-t-lg">
-          <CardTitle className="flex items-center justify-between text-sm font-medium">
+        <CardHeader className="bg-muted/80 rounded-t-lg border-b border-border py-2">
+          <CardTitle className="flex items-center justify-between text-xs font-medium">
             <div className="flex items-center gap-2">
-              <Pill className="w-4 h-4" />
-              <span>Prescriptions</span>
+              <Pill className="w-3 h-3 text-foreground" />
+              <span className="text-foreground">Prescriptions</span>
             </div>
-            <MoreHorizontal className="w-4 h-4" />
+            <MoreHorizontal className="w-3 h-3 text-foreground" />
           </CardTitle>
         </CardHeader>
         <CardContent className="p-4 space-y-3">
@@ -91,13 +91,13 @@ const MedicalPanels = () => {
 
       {/* Allergen Report Panel */}
       <Card className="bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-card)]">
-        <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-t-lg">
-          <CardTitle className="flex items-center justify-between text-sm font-medium">
+        <CardHeader className="bg-muted/80 rounded-t-lg border-b border-border py-2">
+          <CardTitle className="flex items-center justify-between text-xs font-medium">
             <div className="flex items-center gap-2">
-              <TestTube className="w-4 h-4" />
-              <span>Allergen Report</span>
+              <TestTube className="w-3 h-3 text-foreground" />
+              <span className="text-foreground">Allergen Report</span>
             </div>
-            <MoreHorizontal className="w-4 h-4" />
+            <MoreHorizontal className="w-3 h-3 text-foreground" />
           </CardTitle>
         </CardHeader>
         <CardContent className="p-4">
@@ -110,13 +110,13 @@ const MedicalPanels = () => {
 
       {/* Community ENT Matches - Full Width */}
       <Card className="bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-card)] lg:col-span-2">
-        <CardHeader className="bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-t-lg">
-          <CardTitle className="flex items-center justify-between text-sm font-medium">
+        <CardHeader className="bg-warning/20 rounded-t-lg border-b border-border py-2">
+          <CardTitle className="flex items-center justify-between text-xs font-medium">
             <div className="flex items-center gap-2">
-              <Stethoscope className="w-4 h-4" />
-              <span>Community ENT Matches</span>
+              <Stethoscope className="w-3 h-3 text-foreground" />
+              <span className="text-foreground">Community ENT Matches</span>
             </div>
-            <MoreHorizontal className="w-4 h-4" />
+            <MoreHorizontal className="w-3 h-3 text-foreground" />
           </CardTitle>
         </CardHeader>
         <CardContent className="p-4">
