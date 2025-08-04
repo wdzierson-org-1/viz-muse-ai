@@ -14,15 +14,10 @@ const Index = () => {
         <Sidebar />
         
         <main className="flex-1 p-6">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {/* Left Column - Patient Info */}
             <div className="lg:col-span-1">
               <PatientCard />
-            </div>
-            
-            {/* Middle Column - Appointment Details */}
-            <div className="lg:col-span-1">
-              <AppointmentDetails />
             </div>
             
             {/* Right Columns - Medical Panels */}
