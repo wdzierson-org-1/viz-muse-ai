@@ -1,4 +1,4 @@
-import { MoreHorizontal, Pill, ScanLine, FileText, UserCheck } from "lucide-react";
+import { MoreHorizontal, Pill, ScanLine, FileText, UserCheck, FolderOpen, Stethoscope, FilePenLine, TestTube } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -9,9 +9,12 @@ const MedicalPanels = () => {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
       {/* Diagnoses Panel */}
       <Card className="bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-card)]">
-        <CardHeader className="bg-primary text-primary-foreground rounded-t-lg">
+        <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-t-lg">
           <CardTitle className="flex items-center justify-between text-sm font-medium">
-            <span>📋 Diagnoses</span>
+            <div className="flex items-center gap-2">
+              <FolderOpen className="w-4 h-4" />
+              <span>Diagnoses</span>
+            </div>
             <MoreHorizontal className="w-4 h-4" />
           </CardTitle>
         </CardHeader>
@@ -28,9 +31,12 @@ const MedicalPanels = () => {
 
       {/* CT Scan Panel */}
       <Card className="bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-card)]">
-        <CardHeader className="bg-primary text-primary-foreground rounded-t-lg">
+        <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-t-lg">
           <CardTitle className="flex items-center justify-between text-sm font-medium">
-            <span>📄 CT Scan</span>
+            <div className="flex items-center gap-2">
+              <ScanLine className="w-4 h-4" />
+              <span>CT Scan</span>
+            </div>
             <MoreHorizontal className="w-4 h-4" />
           </CardTitle>
         </CardHeader>
@@ -45,9 +51,12 @@ const MedicalPanels = () => {
 
       {/* Prescriptions Panel */}
       <Card className="bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-card)]">
-        <CardHeader className="bg-primary text-primary-foreground rounded-t-lg">
+        <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-t-lg">
           <CardTitle className="flex items-center justify-between text-sm font-medium">
-            <span>🔗 Prescriptions</span>
+            <div className="flex items-center gap-2">
+              <Pill className="w-4 h-4" />
+              <span>Prescriptions</span>
+            </div>
             <MoreHorizontal className="w-4 h-4" />
           </CardTitle>
         </CardHeader>
@@ -82,9 +91,12 @@ const MedicalPanels = () => {
 
       {/* Allergen Report Panel */}
       <Card className="bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-card)]">
-        <CardHeader className="bg-primary text-primary-foreground rounded-t-lg">
+        <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-t-lg">
           <CardTitle className="flex items-center justify-between text-sm font-medium">
-            <span>📄 Allergen Report</span>
+            <div className="flex items-center gap-2">
+              <TestTube className="w-4 h-4" />
+              <span>Allergen Report</span>
+            </div>
             <MoreHorizontal className="w-4 h-4" />
           </CardTitle>
         </CardHeader>
@@ -98,9 +110,12 @@ const MedicalPanels = () => {
 
       {/* Community ENT Matches - Full Width */}
       <Card className="bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-card)] lg:col-span-2">
-        <CardHeader className="bg-warning text-white rounded-t-lg">
+        <CardHeader className="bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-t-lg">
           <CardTitle className="flex items-center justify-between text-sm font-medium">
-            <span>🔍 Community ENT Matches</span>
+            <div className="flex items-center gap-2">
+              <Stethoscope className="w-4 h-4" />
+              <span>Community ENT Matches</span>
+            </div>
             <MoreHorizontal className="w-4 h-4" />
           </CardTitle>
         </CardHeader>
