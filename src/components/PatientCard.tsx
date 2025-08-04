@@ -19,7 +19,7 @@ const PatientCard = () => {
       <Card className="bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-card)]">
         <CardContent className="p-6 text-center">
           <Avatar className="w-16 h-16 mx-auto mb-4">
-            <AvatarImage src="/lovable-uploads/4fa3a199-689d-4313-b6ab-6acc2767ac3c.png" alt="Maria Perez" />
+            <AvatarImage src="/lovable-uploads/maria-perez-new.jpg" alt="Maria Perez" />
             <AvatarFallback className="bg-primary text-primary-foreground text-lg font-semibold">MP</AvatarFallback>
           </Avatar>
           <h3 className="text-lg font-semibold text-foreground mb-2">Maria Perez</h3>

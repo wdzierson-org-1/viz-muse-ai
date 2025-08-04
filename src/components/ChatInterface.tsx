@@ -22,7 +22,7 @@ const ChatInterface = () => {
   };
 
   return (
-    <Card className="fixed bottom-6 left-20 w-96 bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-elevated)] border-primary/20">
+    <Card className="fixed bottom-6 left-20 w-96 bg-gradient-to-br from-card to-medical-light shadow-[var(--shadow-elevated)] border-2 border-transparent" style={{borderImage: 'var(--gradient-chat) 1'}}>
       <CardContent className="p-0">
         {/* Chat Header */}
         <div className="bg-primary text-primary-foreground p-3 rounded-t-lg">
